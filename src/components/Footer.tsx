@@ -3,7 +3,7 @@ import { FaEnvelope, FaPhone } from 'react-icons/fa6';
 const Footer = () => {
   return (
     <footer className="bg-dynamic-black text-white flex">
-      <div className="container p-8 flex justify-between">
+      <div className="container mx-auto p-8 flex justify-between">
         <div className="flex gap-8">
           <p className="flex gap-2 items-center">
             <FaPhone />

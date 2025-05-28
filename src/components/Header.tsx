@@ -3,7 +3,7 @@ import Nav from './Nav';
 
 const Header = () => {
   return (
-    <header className="container p-8 flex justify-between items-center">
+    <header className="container mx-auto p-8 flex justify-between items-center">
       <Logo />
       <Nav />
     </header>

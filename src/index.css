@@ -44,12 +44,8 @@ body {
   font-weight: lighter;
 }
 
-.container {
-  margin: 0 auto;
-}
-
 h1 {
-  @apply font-bold text-6xl text-dynamic-black uppercase font-stretch-semi-condensed sm:text-8xl/21;
+  @apply font-bold text-6xl/12 text-dynamic-black uppercase font-stretch-condensed sm:text-8xl/21;
 }
 
 h2 {
@@ -73,4 +69,12 @@ a,
   &.btn-default {
     @apply bg-tobiko-orange;
   }
+
+  &.btn-alt {
+    @apply bg-super-silver;
+  }
+}
+
+.gallery-img {
+  @apply rounded-4xl;
 }

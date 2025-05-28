@@ -2,7 +2,7 @@ import { techIcons } from '../data/techIcons';
 
 const TechCarousel = () => {
   return (
-    <div className="w-full overflow-hidden py-16 [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-64px),transparent_100%)]">
+    <div className="w-full overflow-hidden py-16 [mask-image:_linear-gradient(to_right,transparent_0,_black_64px,_black_calc(100%-64px),transparent_100%)]">
       <div className="flex w-max animate-infinite-scroll">
         {techIcons.map(({ name, icon }) => (
           <img
