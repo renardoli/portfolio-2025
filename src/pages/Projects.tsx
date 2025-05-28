@@ -25,10 +25,20 @@ const Projects = () => {
                   <button type="button" className="btn btn-default">
                     Voir plus
                   </button>
-                  <a href={github} className="btn btn-alt">
+                  <a
+                    className="btn btn-alt"
+                    target="_blank"
+                    rel="noreferrer"
+                    href={github}
+                  >
                     <FaGithub size="1.6rem" />
                   </a>
-                  <a href={link} className="btn btn-alt">
+                  <a
+                    className="btn btn-alt"
+                    target="_blank"
+                    rel="noreferrer"
+                    href={link}
+                  >
                     <FaArrowUpRightFromSquare size="1.6rem" />
                   </a>
                 </div>
