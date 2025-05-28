@@ -3,7 +3,7 @@ import photo from './assets/img/olivier-renard-photo.png';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import TechCarousel from './components/TechCarousel';
-import { techStack } from './data/techstack';
+import { techStack } from './data/techStack';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
                 <span className="font-thin font-stretch-condensed">Renard</span>
               </h1>
               <h2 className="font-light text-4xl tracking-widest text-tobiko-orange uppercase font-stretch-condensed">
-                Développeur Web Fullstack JS
+                Développeur Fullstack Node.js/React
               </h2>
             </div>
             <p>
