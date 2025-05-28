@@ -4,7 +4,7 @@ import Nav from './Nav';
 
 const Header = () => {
   return (
-    <header className="container mx-auto p-8 flex justify-between items-center">
+    <header className="container mx-auto p-8 flex flex-col justify-between items-center gap-8 md:flex-row">
       <Link to="/">
         <Logo />
       </Link>

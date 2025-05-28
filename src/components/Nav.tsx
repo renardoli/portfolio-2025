@@ -4,14 +4,14 @@ import { Link } from 'react-router';
 const Nav = () => {
   return (
     <nav>
-      <ul className="flex gap-8 items-center">
-        <li>
+      <ul className="flex gap-4 items-center font-semibold sm:gap-8">
+        <li className="flex-shrink-0">
           <Link to="/">A propos</Link>
         </li>
-        <li>
+        <li className="flex-shrink-0">
           <Link to="/projects">Mes projets</Link>
         </li>
-        <li>
+        <li className="flex-shrink-0">
           <Link to="/timeline">Mon parcours</Link>
         </li>
         <li>
