@@ -12,7 +12,7 @@ const Nav = () => {
           <Link to="/projects">Mes projets</Link>
         </li>
         <li>
-          <Link to="/">Mon parcours</Link>
+          <Link to="/timeline">Mon parcours</Link>
         </li>
         <li>
           <a
