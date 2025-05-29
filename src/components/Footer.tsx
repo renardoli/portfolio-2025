@@ -3,11 +3,11 @@ import { FaEnvelope, FaPhone } from 'react-icons/fa6';
 const Footer = () => {
   return (
     <footer className="bg-dynamic-black text-white flex">
-      <div className="container mx-auto p-8 flex justify-between">
+      <div className="container mx-auto p-8 flex flex-col items-center gap-4 lg:flex-row lg:justify-between">
         <div className="flex gap-8">
           <p className="flex gap-2 items-center">
             <FaPhone />
-            +33623006421
+            0623006421
           </p>
           <p className="flex gap-2 items-center">
             <FaEnvelope />

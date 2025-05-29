@@ -11,8 +11,8 @@ const Timeline = () => {
             <div key={title} className="relative">
               <div className="absolute -left-[6.1rem] top-8 w-16 h-16 bg-tobiko-orange rounded-full flex items-center justify-center text-sm">
                 <span>
-                  {type === 'travail' && <FaGraduationCap size={'1.6rem'} />}
-                  {type === 'formation' && <FaBriefcase size={'1.6rem'} />}
+                  {type === 'travail' && <FaBriefcase size={'1.6rem'} />}
+                  {type === 'formation' && <FaGraduationCap size={'1.6rem'} />}
                 </span>
               </div>
               <div>
