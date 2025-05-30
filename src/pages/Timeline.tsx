@@ -5,14 +5,18 @@ import Layout from '../layout/Layout';
 const Timeline = () => {
   return (
     <Layout>
-      <div className="container mx-auto px-8 pt-5 pb-20 flex flex-col gap-32 lg:py-20">
-        <div className="border-l-5 border-super-silver pl-16 ml-8 space-y-32 relative">
+      <div className="container mx-auto px-8 pt-5 pb-20 flex flex-col gap-32 sm:py-20">
+        <div className="border-l-5 border-super-silver pl-8 ml-6 space-y-32 relative sm:pl-16 sm:ml-8">
           {timeline.map(({ date, title, subtitle, type, description }) => (
             <div key={title} className="relative">
-              <div className="absolute -left-[6.1rem] top-8 w-16 h-16 bg-tobiko-orange rounded-full flex items-center justify-center text-sm">
+              <div className="absolute -left-[3.7rem] top-4 w-12 h-12 bg-tobiko-orange rounded-full flex items-center justify-center text-sm sm:-left-[6.1rem] sm:top-8 sm:w-16 sm:h-16">
                 <span>
-                  {type === 'travail' && <FaBriefcase size={'1.6rem'} />}
-                  {type === 'formation' && <FaGraduationCap size={'1.6rem'} />}
+                  {type === 'travail' && (
+                    <FaBriefcase size={'50%'} className="m-auto" />
+                  )}
+                  {type === 'formation' && (
+                    <FaGraduationCap size={'50%'} className="m-auto" />
+                  )}
                 </span>
               </div>
               <div>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import photo from '../assets/img/olivier-renard-photo.png';
 import TechCarousel from '../components/TechCarousel';
 import { techStack } from '../data/techStack';
@@ -47,9 +48,9 @@ const Homepage = () => {
               </strong>
               .
             </p>
-            <button type="button" className="btn btn-default">
+            <Link className="btn btn-default" to={'/projects'}>
               Voir mes projets
-            </button>
+            </Link>
           </div>
         </div>
         <TechCarousel />
