@@ -45,7 +45,7 @@ body {
 }
 
 h1 {
-  @apply font-bold text-6xl/12 text-dynamic-black uppercase font-stretch-condensed sm:text-8xl/21;
+  @apply font-bold text-5xl/12 text-dynamic-black uppercase font-stretch-condensed sm:text-8xl/21;
 }
 
 h2 {
@@ -66,6 +66,14 @@ a,
 .btn {
   @apply font-normal w-fit px-8 py-4 rounded-full cursor-pointer;
 
+  &.btn-icon {
+    @apply flex items-center p-4 aspect-square;
+
+    svg {
+      @apply w-6 h-6 m-auto;
+    }
+  }
+
   &.btn-default {
     @apply bg-tobiko-orange;
   }
@@ -76,5 +84,5 @@ a,
 }
 
 .gallery-img {
-  @apply rounded-4xl;
+  @apply rounded-4xl w-64 h-auto sm:w-auto;
 }

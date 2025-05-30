@@ -26,20 +26,20 @@ const Projects = () => {
                     Voir plus
                   </button>
                   <a
-                    className="btn btn-alt"
+                    className="btn btn-icon btn-alt"
                     target="_blank"
                     rel="noreferrer"
                     href={github}
                   >
-                    <FaGithub size="1.6rem" />
+                    <FaGithub />
                   </a>
                   <a
-                    className="btn btn-alt"
+                    className="btn btn-icon btn-alt"
                     target="_blank"
                     rel="noreferrer"
                     href={link}
                   >
-                    <FaArrowUpRightFromSquare size="1.6rem" />
+                    <FaArrowUpRightFromSquare className="w-5 h-auto sm:w-7" />
                   </a>
                 </div>
               </div>
@@ -48,7 +48,9 @@ const Projects = () => {
         )}
       </div>
       <div>
-        <h1 className="container mx-auto mt-16 px-8">Créations graphiques</h1>
+        <h1 className="container mx-auto mt-16 px-8">
+          Réalisations graphiques
+        </h1>
         <div className="bg-super-silver py-16 -mt-8">
           <div className="container mx-auto px-8">
             <div className="overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_64px,_black_calc(100%-64px),transparent_100%)]">

@@ -1,38 +1,33 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa6';
-import { Link } from 'react-router';
+import { NavLink } from 'react-router';
 
 const Nav = () => {
   return (
-    <nav>
-      <ul className="flex gap-4 items-center font-semibold sm:gap-8">
+    <nav className="flex flex-col gap-8 items-center bg-dynamic-black text-super-silver w-full p-4 rounded-4xl md:flex-row md:bg-transparent md:text-dynamic-black md:w-auto">
+      <ul className="flex gap-6 items-center font-semibold [&>li>a.active]:text-tobiko-orange [&>li>a]:hover:text-tobiko-orange">
         <li className="flex-shrink-0">
-          <Link to="/">A propos</Link>
-        </li>
-        <li className="flex-shrink-0">
-          <Link to="/projects">Mes projets</Link>
+          <NavLink to="/">A propos</NavLink>
         </li>
         <li className="flex-shrink-0">
-          <Link to="/timeline">Mon parcours</Link>
+          <NavLink to="/projects">Mes projets</NavLink>
         </li>
-        <li>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/renardoli"
-          >
-            <FaGithub size={'2rem'} />
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.linkedin.com/in/renard-olivier/"
-          >
-            <FaLinkedin size={'2rem'} />
-          </a>
+        <li className="flex-shrink-0">
+          <NavLink to="/timeline">Mon parcours</NavLink>
         </li>
       </ul>
+      <div className="hidden md:flex md:gap-8">
+        <a target="_blank" rel="noreferrer" href="https://github.com/renardoli">
+          <FaGithub className="w-5 h-auto sm:w-8" />
+        </a>
+
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/renard-olivier/"
+        >
+          <FaLinkedin className="w-5 h-auto sm:w-8" />
+        </a>
+      </div>
     </nav>
   );
 };

@@ -2,9 +2,9 @@ export const techStack = [
   {
     title: 'Langages & Frameworks',
     elements: [
-      'JavaScript/TypeScript',
       'HTML5/CSS3, Sass, Tailwind',
       'SQL, PostgreSQL, MySQL',
+      'JavaScript/TypeScript',
       'Node.js',
       'Express.js',
       'React',
@@ -42,7 +42,7 @@ export const techStack = [
     title: 'Front-end',
     elements: [
       'Intégration HTML/CSS',
-      'Mopbile-first',
+      'Mobile-first',
       'React component/custom hook/context',
       'Standards SEO, A11y, UI/UX',
     ],
