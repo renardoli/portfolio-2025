@@ -6,19 +6,41 @@ import Layout from '../layout/Layout';
 const Projects = () => {
   return (
     <Layout>
-      <div className="container mx-auto px-8 pb-20 flex flex-col gap-32 lg:py-20">
+      <div className="container mx-auto px-8 mb-24 flex flex-col gap-24 md:mb-32 md:gap-32 md:py-10">
         {projects.map(
-          ({ title, subtitle, img, imgAlt, link, github, description }) => (
-            <div key={title} className="flex flex-col gap-8 lg:flex-row">
+          ({
+            title,
+            subtitle,
+            img,
+            imgAlt,
+            link,
+            github,
+            tags,
+            description,
+          }) => (
+            <div
+              key={title}
+              className="flex flex-col gap-4 sm:gap-8 lg:flex-row"
+            >
               <img
                 className="w-full m-auto rounded-4xl lg:order-last lg:w-auto"
                 src={img}
                 alt={imgAlt}
               />
-              <div className="flex flex-col gap-8 justify-center">
+              <div className="flex flex-col gap-4 justify-center">
                 <div>
-                  <h1>{title}</h1>
-                  <h2>{subtitle}</h2>
+                  <h2>{title}</h2>
+                  <h3>{subtitle}</h3>
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    {tags.map((tag) => (
+                      <p
+                        key={tag}
+                        className="bg-super-silver w-fit px-3 py-1 rounded-2xl text-xs!"
+                      >
+                        {tag}
+                      </p>
+                    ))}
+                  </div>
                 </div>
                 <p>{description}</p>
                 <div className="flex gap-2">
@@ -48,9 +70,9 @@ const Projects = () => {
         )}
       </div>
       <div>
-        <h1 className="container mx-auto mt-16 px-8">
+        <h2 className="container mx-auto mt-16 px-8">
           Réalisations graphiques
-        </h1>
+        </h2>
         <div className="bg-super-silver py-16 -mt-8">
           <div className="container mx-auto px-8">
             <div className="overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_64px,_black_calc(100%-64px),transparent_100%)]">

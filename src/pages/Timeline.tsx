@@ -5,7 +5,7 @@ import Layout from '../layout/Layout';
 const Timeline = () => {
   return (
     <Layout>
-      <div className="container mx-auto px-8 pb-20 flex flex-col gap-32 sm:py-20">
+      <div className="container mx-auto px-8 pb-20 flex flex-col gap-32 md:py-10">
         <div className="border-l-5 border-super-silver pl-9 ml-4.5 space-y-16 relative sm:pl-16 sm:ml-8 sm:space-y-32">
           {timeline.map(({ date, title, subtitle, type, description }) => (
             <div key={title} className="relative">
@@ -22,8 +22,8 @@ const Timeline = () => {
               <div>
                 <p>{date}</p>
               </div>
-              <h1>{title}</h1>
-              <h2>{subtitle}</h2>
+              <h2>{title}</h2>
+              <h3>{subtitle}</h3>
               <ul className="list-disc pl-4 mt-4">
                 {description.map((line, i) => (
                   // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>

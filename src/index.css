@@ -44,15 +44,16 @@ body {
   font-weight: lighter;
 }
 
-h1 {
+h1,
+h2 {
   @apply font-bold text-5xl/12 text-dynamic-black uppercase font-stretch-condensed sm:text-8xl/21;
 }
 
-h2 {
-  @apply font-light text-xl tracking-widest text-tobiko-orange uppercase font-stretch-condensed sm:text-4xl;
+h3 {
+  @apply font-light text-xl/5 tracking-widest text-tobiko-orange uppercase font-stretch-condensed sm:text-4xl;
 }
 
-h3 {
+h4 {
   @apply font-black uppercase text-2xl font-stretch-condensed border-b-4 border-tobiko-orange mb-3 pb-3 sm:text-4xl;
 }
 

@@ -8,7 +8,7 @@ import Layout from '../layout/Layout';
 const Homepage = () => {
   return (
     <Layout>
-      <div className="container mx-auto px-8 pb-20 flex flex-col gap-8 lg:py-20">
+      <div className="container mx-auto px-8 pb-20 flex flex-col gap-8 md:py-10">
         <div className="flex flex-col gap-8 lg:flex-row">
           <img
             className="rounded-full aspect-square w-xs m-auto object-cover object-top lg:rounded-4xl lg:order-last lg:m-0 xl:w-auto xl:aspect-auto"
@@ -17,11 +17,11 @@ const Homepage = () => {
           />
           <div className="flex flex-col gap-8 justify-center">
             <div>
-              <h1>
+              <h2>
                 Olivier{' '}
                 <span className="font-thin font-stretch-condensed">Renard</span>
-              </h1>
-              <h2>Développeur Fullstack Node.js/React</h2>
+              </h2>
+              <h3>Développeur Fullstack Node.js/React</h3>
             </div>
             <p>
               Mon parcours s'est construit autour d'une passion précoce pour
@@ -76,7 +76,7 @@ const Homepage = () => {
         <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
           {techStack.map(({ title, elements }) => (
             <div key={title}>
-              <h3>{title}</h3>
+              <h4>{title}</h4>
               <ul className="list-disc pl-6">
                 {elements.map((element) => (
                   <li key={element}>{element}</li>
