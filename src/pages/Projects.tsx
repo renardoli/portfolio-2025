@@ -6,7 +6,7 @@ import Layout from '../layout/Layout';
 const Projects = () => {
   return (
     <Layout>
-      <div className="container mx-auto px-8 pt-5 pb-20 flex flex-col gap-32 lg:py-20">
+      <div className="container mx-auto px-8 pb-20 flex flex-col gap-32 lg:py-20">
         {projects.map(
           ({ title, subtitle, img, imgAlt, link, github, description }) => (
             <div key={title} className="flex flex-col gap-8 lg:flex-row">
@@ -21,7 +21,7 @@ const Projects = () => {
                   <h2>{subtitle}</h2>
                 </div>
                 <p>{description}</p>
-                <div className="flex gap-4">
+                <div className="flex gap-2">
                   <button type="button" className="btn btn-default">
                     Voir plus
                   </button>

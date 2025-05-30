@@ -3,8 +3,8 @@ import { NavLink } from 'react-router';
 
 const Nav = () => {
   return (
-    <nav className="flex flex-col gap-8 items-center bg-dynamic-black text-super-silver w-full p-4 rounded-4xl md:flex-row md:bg-transparent md:text-dynamic-black md:w-auto">
-      <ul className="flex gap-6 items-center font-semibold [&>li>a.active]:text-tobiko-orange [&>li>a]:hover:text-tobiko-orange">
+    <nav className="flex flex-col gap-8 items-center bg-dynamic-black text-super-silver w-full p-4 rounded-4xl [&_a:hover]:text-tobiko-orange md:flex-row md:bg-transparent md:text-dynamic-black md:w-auto">
+      <ul className="flex gap-6 items-center font-semibold [&>li>a.active]:text-tobiko-orange">
         <li className="flex-shrink-0">
           <NavLink to="/">A propos</NavLink>
         </li>

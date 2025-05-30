@@ -5,11 +5,11 @@ import Layout from '../layout/Layout';
 const Timeline = () => {
   return (
     <Layout>
-      <div className="container mx-auto px-8 pt-5 pb-20 flex flex-col gap-32 sm:py-20">
-        <div className="border-l-5 border-super-silver pl-8 ml-6 space-y-32 relative sm:pl-16 sm:ml-8">
+      <div className="container mx-auto px-8 pb-20 flex flex-col gap-32 sm:py-20">
+        <div className="border-l-5 border-super-silver pl-9 ml-4.5 space-y-16 relative sm:pl-16 sm:ml-8 sm:space-y-32">
           {timeline.map(({ date, title, subtitle, type, description }) => (
             <div key={title} className="relative">
-              <div className="absolute -left-[3.7rem] top-4 w-12 h-12 bg-tobiko-orange rounded-full flex items-center justify-center text-sm sm:-left-[6.1rem] sm:top-8 sm:w-16 sm:h-16">
+              <div className="absolute -left-[3.6rem] top-5.5 w-10 h-10 bg-tobiko-orange rounded-full flex items-center justify-center text-sm sm:-left-[6.1rem] sm:top-8 sm:w-16 sm:h-16">
                 <span>
                   {type === 'travail' && (
                     <FaBriefcase size={'50%'} className="m-auto" />
@@ -26,6 +26,7 @@ const Timeline = () => {
               <h2>{subtitle}</h2>
               <ul className="list-disc pl-4 mt-4">
                 {description.map((line, i) => (
+                  // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
                   <li key={i}>{line}</li>
                 ))}
               </ul>

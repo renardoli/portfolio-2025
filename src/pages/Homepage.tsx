@@ -1,3 +1,4 @@
+import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 import { Link } from 'react-router';
 import photo from '../assets/img/olivier-renard-photo.png';
 import TechCarousel from '../components/TechCarousel';
@@ -7,7 +8,7 @@ import Layout from '../layout/Layout';
 const Homepage = () => {
   return (
     <Layout>
-      <div className="container mx-auto px-8 pt-5 pb-20 flex flex-col gap-8 lg:py-20">
+      <div className="container mx-auto px-8 pb-20 flex flex-col gap-8 lg:py-20">
         <div className="flex flex-col gap-8 lg:flex-row">
           <img
             className="rounded-full aspect-square w-xs m-auto object-cover object-top lg:rounded-4xl lg:order-last lg:m-0 xl:w-auto xl:aspect-auto"
@@ -48,9 +49,27 @@ const Homepage = () => {
               </strong>
               .
             </p>
-            <Link className="btn btn-default" to={'/projects'}>
-              Voir mes projets
-            </Link>
+            <div className="flex gap-2">
+              <Link className="btn btn-default" to={'/projects'}>
+                Voir mes projets
+              </Link>
+              <a
+                className="btn btn-icon btn-alt"
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/renardoli"
+              >
+                <FaGithub />
+              </a>
+              <a
+                className="btn btn-icon btn-alt"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/renard-olivier/"
+              >
+                <FaLinkedin />
+              </a>
+            </div>
           </div>
         </div>
         <TechCarousel />
