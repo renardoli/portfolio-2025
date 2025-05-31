@@ -5,7 +5,7 @@ import Layout from '../layout/Layout';
 const Timeline = () => {
   return (
     <Layout>
-      <div className="container mx-auto px-8 pb-20 flex flex-col gap-32 md:py-10">
+      <div className="container mx-auto px-8 pb-20 flex flex-col gap-32 md:pt-10">
         <div className="border-l-5 border-super-silver pl-9 ml-4.5 space-y-16 relative sm:pl-16 sm:ml-8 sm:space-y-32">
           {timeline.map(({ date, title, subtitle, type, description }) => (
             <div key={title} className="relative">

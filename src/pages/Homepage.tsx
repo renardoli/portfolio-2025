@@ -8,7 +8,7 @@ import Layout from '../layout/Layout';
 const Homepage = () => {
   return (
     <Layout>
-      <div className="container mx-auto px-8 pb-20 flex flex-col gap-8 md:py-10">
+      <div className="container mx-auto px-8 pb-20 flex flex-col gap-8 md:pt-10">
         <div className="flex flex-col gap-8 lg:flex-row">
           <img
             className="rounded-full aspect-square w-xs m-auto object-cover object-top lg:rounded-4xl lg:order-last lg:m-0 xl:w-auto xl:aspect-auto"
