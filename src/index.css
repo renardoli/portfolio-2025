@@ -82,7 +82,7 @@ a,
     @apply flex items-center p-2 aspect-square;
 
     svg {
-      @apply w-5 h-5 m-auto;
+      @apply w-5 h-5 m-auto sm:w-6.5 sm:h-6.5;
     }
   }
 

@@ -2,9 +2,11 @@ import { AnimatePresence, motion } from 'motion/react';
 import { useLocation } from 'react-router';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import { useSmoothScroll } from '../hooks/useSmoothScroll';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation();
+  useSmoothScroll();
 
   return (
     <AnimatePresence mode="wait">
