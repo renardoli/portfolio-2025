@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: 'Bahnschrift';
-  src: url('./assets/font/Bahnschrift.woff2') format('woff2');
+  font-family: "Bahnschrift";
+  src: url("./assets/font/Bahnschrift.woff2") format("woff2");
   font-style: normal;
   font-display: swap;
 }
@@ -16,7 +16,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
 @theme {
@@ -28,7 +27,6 @@
   --animate-infinite-scroll: infinite-scroll 20s linear infinite;
 
   @keyframes infinite-scroll {
-
     0% {
       transform: translateX(0);
     }
@@ -39,12 +37,10 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-dynamic-black: #eeeeee;
-    --color-super-silver: #333333;
-    --color-white: #1d1d1b;
-  }
+[data-theme="dark"] {
+  --color-dynamic-black: #eeeeee;
+  --color-super-silver: #333333;
+  --color-white: #1d1d1b;
 }
 
 body {
@@ -79,7 +75,7 @@ a,
   @apply font-normal w-fit px-8 py-4 rounded-full cursor-pointer;
 
   &.btn-icon {
-    @apply flex items-center p-2 aspect-square;
+    @apply flex items-center p-4 aspect-square;
 
     svg {
       @apply w-5 h-5 m-auto sm:w-6.5 sm:h-6.5;
@@ -100,10 +96,9 @@ a,
 }
 
 a,
-btn {
+.btn {
   @apply transition-colors duration-200 ease-in-out;
 }
-
 
 .gallery-img {
   @apply rounded-4xl w-64 h-auto sm:w-auto;

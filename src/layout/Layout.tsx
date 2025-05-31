@@ -9,20 +9,22 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   useSmoothScroll();
 
   return (
-    <AnimatePresence mode="wait">
+    <>
       <Header />
-      <motion.main
-        key={location.pathname}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.6, ease: 'easeInOut' }}
-        className="page-content"
-      >
-        {children}
-      </motion.main>
+      <AnimatePresence mode="wait">
+        <motion.main
+          key={location.pathname}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.6, ease: 'easeInOut' }}
+          className="page-content"
+        >
+          {children}
+        </motion.main>
+      </AnimatePresence>
       <Footer />
-    </AnimatePresence>
+    </>
   );
 };
 

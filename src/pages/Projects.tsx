@@ -1,11 +1,11 @@
 import { FaGithub } from 'react-icons/fa6';
+import { useTheme } from '../contexts/ThemeContext';
 import { graphicDesigns } from '../data/graphicDesigns';
 import { projects } from '../data/projects';
-import { useTheme } from '../hooks/useTheme';
 import Layout from '../layout/Layout';
 
 const Projects = () => {
-  const isDark = useTheme();
+  const { isDark } = useTheme();
 
   return (
     <Layout>
