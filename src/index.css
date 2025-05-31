@@ -16,12 +16,14 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 @theme {
-  --color-dynamic-black: hsl(60, 4%, 11%);
-  --color-super-silver: #EEEEEE;
-  --color-tobiko-orange: #E15D0A;
+  --color-dynamic-black: #1d1d1b;
+  --color-super-silver: #ededed;
+  --color-tobiko-orange: #e15d0a;
+  --color-white: #ffffff;
 
   --animate-infinite-scroll: infinite-scroll 20s linear infinite;
 
@@ -37,16 +39,25 @@
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-dynamic-black: #eeeeee;
+    --color-super-silver: #333333;
+    --color-white: #1d1d1b;
+  }
+}
+
 body {
-  background: #fff;
-  color: hsl(60, 4%, 11%);
+  @apply transition-colors duration-200 ease-in-out;
+  background: var(--color-white);
+  color: var(--color-dynamic-black);
   font-size: 1.125rem;
   font-weight: lighter;
 }
 
 h1,
 h2 {
-  @apply font-bold text-5xl/12 text-dynamic-black uppercase font-stretch-condensed sm:text-8xl/21;
+  @apply font-bold text-5xl/12 text-dynamic-black uppercase font-stretch-condensed sm:text-8xl/24;
 }
 
 h3 {
@@ -76,13 +87,23 @@ a,
   }
 
   &.btn-default {
-    @apply bg-tobiko-orange;
+    @apply bg-tobiko-orange text-[#1d1d1b];
   }
 
   &.btn-alt {
     @apply bg-super-silver;
   }
+
+  &:hover {
+    @apply bg-dynamic-black text-white;
+  }
 }
+
+a,
+btn {
+  @apply transition-colors duration-200 ease-in-out;
+}
+
 
 .gallery-img {
   @apply rounded-4xl w-64 h-auto sm:w-auto;

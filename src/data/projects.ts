@@ -3,6 +3,7 @@ export const projects = [
     title: 'Portfolio',
     subtitle: 'Développement Web',
     img: '/img/olivier-renard.png',
+    imgDark: '/img/olivier-renard-light.png',
     imgAlt: "Logo d'Olivier Renard",
     link: 'https://www.olivier-renard.com',
     github: 'https://github.com/renardoli/portfolio-2025',

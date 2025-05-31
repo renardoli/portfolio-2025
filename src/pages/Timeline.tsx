@@ -9,7 +9,7 @@ const Timeline = () => {
         <div className="border-l-5 border-super-silver pl-9 ml-4.5 space-y-16 relative sm:pl-16 sm:ml-8 sm:space-y-32">
           {timeline.map(({ date, title, subtitle, type, description }) => (
             <div key={title} className="relative">
-              <div className="absolute -left-[3.6rem] top-5.5 w-10 h-10 bg-tobiko-orange rounded-full flex items-center justify-center text-sm sm:-left-[6.1rem] sm:top-8 sm:w-16 sm:h-16">
+              <div className="absolute -left-[3.6rem] top-5.5 w-10 h-10 bg-tobiko-orange text-[#1d1d1b] rounded-full flex items-center justify-center text-sm sm:-left-[6.1rem] sm:top-8 sm:w-16 sm:h-16">
                 <span>
                   {type === 'travail' && (
                     <FaBriefcase size={'50%'} className="m-auto" />

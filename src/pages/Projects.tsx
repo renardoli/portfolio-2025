@@ -1,9 +1,12 @@
-import { FaArrowUpRightFromSquare, FaGithub } from 'react-icons/fa6';
+import { FaGithub } from 'react-icons/fa6';
 import { graphicDesigns } from '../data/graphicDesigns';
 import { projects } from '../data/projects';
+import { useTheme } from '../hooks/useTheme';
 import Layout from '../layout/Layout';
 
 const Projects = () => {
+  const isDark = useTheme();
+
   return (
     <Layout>
       <div className="container mx-auto px-8 mb-24 flex flex-col gap-24 md:mb-32 md:gap-32 md:py-10">
@@ -12,6 +15,7 @@ const Projects = () => {
             title,
             subtitle,
             img,
+            imgDark,
             imgAlt,
             link,
             github,
@@ -24,7 +28,7 @@ const Projects = () => {
             >
               <img
                 className="w-full m-auto rounded-4xl lg:order-last lg:w-auto"
-                src={img}
+                src={isDark && imgDark ? imgDark : img}
                 alt={imgAlt}
               />
               <div className="flex flex-col gap-4 justify-center">
@@ -44,9 +48,14 @@ const Projects = () => {
                 </div>
                 <p>{description}</p>
                 <div className="flex gap-2">
-                  <button type="button" className="btn btn-default">
-                    Voir plus
-                  </button>
+                  <a
+                    className="btn btn-default"
+                    target="_blank"
+                    rel="noreferrer"
+                    href={link}
+                  >
+                    Voir le projet
+                  </a>
                   <a
                     className="btn btn-icon btn-alt"
                     target="_blank"
@@ -54,14 +63,6 @@ const Projects = () => {
                     href={github}
                   >
                     <FaGithub />
-                  </a>
-                  <a
-                    className="btn btn-icon btn-alt"
-                    target="_blank"
-                    rel="noreferrer"
-                    href={link}
-                  >
-                    <FaArrowUpRightFromSquare className="w-5 h-auto sm:w-7" />
                   </a>
                 </div>
               </div>
