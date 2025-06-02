@@ -36,23 +36,25 @@ npm install
 
 ```
 portfolio-2025/
+├── original-imgs/      # Original images when converted to webp format
 ├── public/             # Static assets and images
 ├── scripts/            # Utility scripts
 ├── src/
 │   ├── assets/         # Assets used in code
 │   ├── components/     # Reusable React components
 │   ├── contexts/       # React contexts
-│   ├── data/          # Static data
-│   ├── hooks/         # Custom hooks for Lenis & Motion
-│   ├── layout/        # Layout components
-│   ├── pages/         # Page components
-│   ├── types/         # TypeScript declarations
-│   ├── Router.tsx     # React Router v7 configuration
-│   └── main.tsx       # Entry point
+│   ├── data/           # Static data
+│   ├── hooks/          # Custom hooks for Lenis & Motion
+│   ├── layout/         # Layout components
+│   ├── pages/          # Page components
+│   ├── utils/          # Utility functions
+│   ├── Router.tsx      # React Router v7 configuration
+│   └── main.tsx        # Entry point
 ├── .gitignore
 ├── biome.json
 ├── index.html
 ├── package.json
+├── tsconfig.json
 └── vite.config.ts
 ```
 
