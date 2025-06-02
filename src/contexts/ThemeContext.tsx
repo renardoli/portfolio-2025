@@ -47,7 +47,6 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
       'data-theme',
       next ? 'dark' : 'light',
     );
-    console.log('ThemeProvider loaded, isDark =', isDark);
   };
   return (
     <ThemeContext.Provider value={{ isDark, toggleTheme }}>

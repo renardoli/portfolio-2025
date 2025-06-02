@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 import { Link } from 'react-router';
-import photo from '../assets/img/olivier-renard-photo.png';
+import photo from '../assets/img/olivier-renard-photo.webp';
 import TechCarousel from '../components/TechCarousel';
 import { techStack } from '../data/techStack';
 import Layout from '../layout/Layout';

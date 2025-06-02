@@ -2,8 +2,8 @@ export const projects = [
   {
     title: 'Portfolio',
     subtitle: 'Développement Web',
-    img: '/img/olivier-renard.png',
-    imgDark: '/img/olivier-renard-light.png',
+    img: '/img/olivier-renard.webp',
+    imgDark: '/img/olivier-renard-light.webp',
     imgAlt: "Logo d'Olivier Renard",
     link: 'https://www.olivier-renard.com',
     github: 'https://github.com/renardoli/portfolio-2025',
@@ -14,7 +14,7 @@ export const projects = [
   {
     title: 'SkillSwap',
     subtitle: 'Développement Web Fullstack',
-    img: '/img/skillswap.png',
+    img: '/img/skillswap.webp',
     imgAlt: 'Logo de SkillSwap',
     link: 'https://skillswap.olivier-renard.com',
     github: 'https://github.com/orgs/oSkillSwap/repositories',
