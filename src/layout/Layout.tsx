@@ -18,7 +18,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.6, ease: 'easeInOut' }}
-          className="page-content"
+          className="page-content grow"
         >
           {children}
         </motion.main>
