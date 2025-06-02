@@ -1,54 +1,95 @@
-# React + TypeScript + Vite
+# Portfolio Olivier Renard 2025 
+![Node.js Version](https://img.shields.io/badge/Node.js-18+-brightgreen.svg)
+![React](https://img.shields.io/badge/React-19.1-blue?logo=react)
+![Vite](https://img.shields.io/badge/Vite-6.3-9466ff?logo=vite)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.1-38bdf8?logo=tailwindcss)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the repository of my personal portfolio, designed to showcase my expertise in modern web development with a strong focus on performance, accessibility, and user experience.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* [React](https://react.dev/) v19.1 with TypeScript
+* [Vite](https://vitejs.dev/) v6.3 for fast bundling and dev server
+* [TailwindCSS](https://tailwindcss.com/) v4.1 for styling
+* [Lenis](https://github.com/studio-freight/lenis) for smooth scroll
+* [Motion](https://motion.dev/) for page transitions
+* [Biome](https://biomejs.dev/) for linting and formatting
 
-## Expanding the ESLint configuration
+## Requirements
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* Node.js >= 18
+* npm >= 9
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Getting Started
+
+```bash
+# Clone the repository
+git clone git@github.com:renardoli/portfolio-2025.git
+cd portfolio-2025
+
+# Install dependencies
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Project Structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
 ```
+portfolio-2025/
+├── public/             # Static assets and images
+├── scripts/            # Utility scripts
+├── src/
+│   ├── assets/         # Assets used in code
+│   ├── components/     # Reusable React components
+│   ├── contexts/       # React contexts
+│   ├── data/          # Static data
+│   ├── hooks/         # Custom hooks for Lenis & Motion
+│   ├── layout/        # Layout components
+│   ├── pages/         # Page components
+│   ├── types/         # TypeScript declarations
+│   ├── Router.tsx     # React Router v7 configuration
+│   └── main.tsx       # Entry point
+├── .gitignore
+├── biome.json
+├── index.html
+├── package.json
+└── vite.config.ts
+```
+
+## Available Scripts
+
+```bash
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview the production build
+npm run preview
+
+# Convert images to WebP format
+npm run convert:img
+```
+
+## Utility Scripts
+
+### Image Conversion
+
+The `convert:img` script allows you to:
+
+* Automatically convert JPG/PNG images to WebP
+* Optimize image quality (80%)
+* Backup original images into the `/original-imgs` folder
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+For questions or collaboration opportunities, feel free to contact me via [LinkedIn](https://www.linkedin.com/in/renardoli/) or by email at [contact@olivier-renard.com](mailto:contact@olivier-renard.com).
+
+---
+
+Thank you for checking out my portfolio! 😊
